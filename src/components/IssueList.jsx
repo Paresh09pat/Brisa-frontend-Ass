@@ -23,7 +23,7 @@ function IssueList(props) {
       {
         issue.map((n) => (<Issuecard key={n._id} isuid={n._id} title={n.title} desc={n.desc} />))
       }
-      <Link to="/createissue">Create new issue</Link>
+      <Link className='newissuecreate' to="/createissue">Create new issue</Link>
     </div>
   )
 }

@@ -23,7 +23,6 @@ a {
   width: 90%;
   height: 65vh;
   margin: 5%;
-  border: 2px solid gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -46,21 +45,31 @@ a {
   border-radius: 5px;
   cursor: pointer;
   margin: 10px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 2px 2px 2px red;
 }
 
-
+.createbtn:hover{
+  box-shadow: 2px 2px 2px blue; 
+}
 
 .CreateIssue {
-  background-color: rgb(209, 215, 220);
+  background-color: rgb(130, 193, 244);
   width: 90%;
   height: 65vh;
   margin: 5%;
-  border: 2px solid gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.outform{
+  width: 100%;
+  height: 100%;
 }
 
 .title {
@@ -79,6 +88,8 @@ a {
   border-radius: 8px;
   border: none;
   outline: none;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .submitissue {
@@ -89,14 +100,19 @@ a {
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
+  box-shadow: 2px 2px 2px red;
+}
+
+.submitissue:hover{
+  box-shadow: 2px 2px 2px blue;
 }
 
 .issuecard{
-  height: 100px;
+  height: 70px;
   width: 90%;
-  border: 2px solid gray;
+  border: 2px solid yellow;
   margin: 10px auto;
-  border-radius: 8px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   align-items: center;
@@ -105,6 +121,7 @@ a {
 .cardtitle{
   font-size: 24px;
   font-weight: 500;
+  padding-left: 10px;
 }
 
 .closeissue{
@@ -112,8 +129,31 @@ a {
   height: 30px;
   background-color: aquamarine;
   border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 2px red;
+  cursor: pointer;
+}
+.closeissue:hover{
+  box-shadow: 2px 2px 2px blue;
+  cursor: pointer;
 }
 
 .IssueList{
   background-color: rgb(202, 199, 195);
+  width: 100%;
+  height: 1000px;
+  margin-top: -10px;
+  padding-top: 20px;
 }
+
+.newissuecreate{
+  color: white;
+ position: absolute;
+ margin-top: 80px;
+text-align: center;
+margin-left: -100px;
+padding: 5px 30px 5px 30px;
+border-radius: 10px;
+background-color:darkblue;
+}
+

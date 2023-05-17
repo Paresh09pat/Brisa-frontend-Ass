@@ -13,7 +13,7 @@ function Issuecard(props) {
     <div className='issuecard'>
         <div className="cardtitle">{props.title}</div>
         <div className="cardDesc">{props.desc}</div>
-        <button onClick={updateissue} className="closeissue">close issue</button>
+        <button onClick={updateissue} className="closeissue">Close Issue</button>
     </div>
   )
 }

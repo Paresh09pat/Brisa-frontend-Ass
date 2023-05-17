@@ -14,12 +14,13 @@ function CreateIssue() {
             })
     }
     return (
-        <form className='CreateIssue' onSubmit={handleform}>
+       <div className='outform'>
+         <form className='CreateIssue' onSubmit={handleform}>
             <input type="text" className='title'placeholder='Please Enter Title' />
-            <span>Enter Your Issue:</span>
-            <textarea type="text" className='description'/>
+            <textarea type="text" placeholder='Enter Your issue here . . .' className='description'/>
             <button type='submit' className='submitissue'>Submit New Issue</button>
         </form>
+       </div>
     )
 }
 
