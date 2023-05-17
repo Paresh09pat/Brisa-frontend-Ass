@@ -8,7 +8,7 @@ function CreateIssue() {
         const issuedesc = event.target[1].value;
         axios.post("https://brisa-server.onrender.com/createissue", { title: issuetitle, desc: issuedesc})
             .then(res => {
-                window.location.href = 'https://brisa-tech-task.netlify.app/'
+                window.location.href = 'https://monumental-entremet-da7f3e.netlify.app/'
             }).catch(e => {
                 console.log(e);
             })
